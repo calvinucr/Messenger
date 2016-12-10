@@ -14,7 +14,10 @@ class CreateGroupsTable extends Migration
     public function up()
     {
         Schema::create('groups', function (Blueprint $table) {
+            $table->charset = 'utf8';
+            $table->collation = 'utf8_unicode_ci';
             $table->increments('id');
+            $table->string('name');
             $table->timestamps();
         });
     }
@@ -26,6 +29,7 @@ class CreateGroupsTable extends Migration
      */
     public function down()
     {
+        Schema::dropIfExists('contacts');
         Schema::dropIfExists('groups');
     }
 }
