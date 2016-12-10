@@ -13,8 +13,17 @@ class CreateContactsTable extends Migration
      */
     public function up()
     {
-        Schema::create('groups', function (Blueprint $table) {
+        Schema::create('contacts', function (Blueprint $table) {
+            $table->charset = 'utf8';
+            $table->collation = 'utf8_unicode_ci';
             $table->increments('id');
+            $table->integer('group_id')->unsigned()->default(0);
+            $table->foreign('group_id')->references('id')->on('groups')->onDelete('cascade');
+            $table->string('name');
+            $table->string('company');
+            $table->string('email');
+            $table->string('phone');
+            $table->string('city');
             $table->timestamps();
         });
     }
@@ -26,6 +35,6 @@ class CreateContactsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('groups');
+        Schema::dropIfExists('contacts');
     }
 }
