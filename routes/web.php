@@ -14,3 +14,9 @@
 Route::get('/', function () {
     return view('welcome');
 });
+Route::get('/home', 'HomeController@index');
+Route::get('/profile', 'ProfileController@index');
+Route::get('/contacts', 'ContactsController@index');
+
+Auth::routes();
+

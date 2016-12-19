@@ -35,16 +35,3 @@ $factory->define(App\Group::class, function (Faker\Generator $faker) {
     ];
 });
 
-/*
-| Contact
-*/
-$factory->define(App\Contact::class, function (Faker\Generator $faker) {
-    return [
-        'group_id' => $faker->randomElement(App\Group::pluck('id')->toArray()),
-        'name' => $faker->streetName,
-        'company' => $faker->company,
-        'email' => $faker->safeEmail,
-        'phone' => $faker->phoneNumber,
-        'city' => $faker->city,
-    ];
-});
