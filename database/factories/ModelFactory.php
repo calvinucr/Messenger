@@ -11,6 +11,9 @@
 |
 */
 
+/*
+| User
+*/
 $factory->define(App\User::class, function (Faker\Generator $faker) {
     static $password;
 
@@ -21,3 +24,14 @@ $factory->define(App\User::class, function (Faker\Generator $faker) {
         'remember_token' => str_random(10),
     ];
 });
+
+/*
+| Group
+*/
+$factory->define(App\Group::class, function (Faker\Generator $faker) {
+
+    return [
+        'name' => $faker->streetName,
+    ];
+});
+
