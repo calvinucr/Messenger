@@ -1,4 +1,6 @@
-.border-bottom 	{	border-bottom: 1px solid #eeeeee;}
+/*
+  General button
+*/
 .btn {
   background: #fff;
   background-image: -webkit-linear-gradient(top, #fff, #ced3d6);
@@ -8,13 +10,15 @@
   background-image: linear-gradient(to bottom, #fff, #ced3d6);
   -webkit-border-radius: 28;
   -moz-border-radius: 28;
-  border-radius: 28px;
+  border-color: #0f40a7;
   font-family: Arial;
   color: #000;
   font-size: 12px;
   padding: 0 !important;
   text-decoration: none;
-  width:85%;
+  float: right;
+  width: 30px;
+  height: 25px;
 }
 
 .btn:hover {
@@ -28,17 +32,22 @@
   color: #000;
 }
 .edit-input 	{   
-	width: 80%;
-    border: none;
-    display: none;
-    border-bottom: solid 2px #969696;
-    padding: 2px;
+  border: none;
+  display: none;
+  border-bottom: solid 2px #969696;
+  padding: 2px;
+  width:100%;
+}
+.glyphicon-sizing {     
+  width: 15px;
+  left: 2.5px;
+  height: 15px;
 }
 .cancel-info-edit,.save-info-edit,
 .cancel-summary-edit,.save-summary-edit,
 .cancel-profolio-edit,.save-profolio-edit
 {	display:none;}
 
-input[type="file"] 	{	margin:18px 0 0 0 !important;width: 100%;}
-input[type="button"],input[type="reset"] {	margin-top:25px;}
+
+input[type="file"] 	{	display:none; width: 100%;}
 .text-body	{	height:200px;}

@@ -11,7 +11,7 @@
 	<title>{{ config('app.name', 'Laravel') }}</title>
 
 	<!-- Bootstrap -->
-	<link href="/css/bootstrap/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<!-- Site CSS -->
 	<link href="/css/app.min.css" rel="stylesheet">
 
@@ -83,7 +83,8 @@
 		@yield('content')
 	</div>
 	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-	<script src="/js/jquery.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 	<!-- Include all compiled plugins (below), or include individual files as needed -->
 	<script src="/js/bootstrap/bootstrap.min.js"></script>
 	<!-- Scripts -->

@@ -7688,25 +7688,43 @@ button.close {
   }
 }
 
+h1, h2, h3, h4, h5, h6 {
+  padding: 0 !important;
+  padding: 0 !important;
+}
+
 .padding-reset {
   padding: 0 !important;
 }
 
-.border-bottom {
-  border-bottom: 1px solid #eeeeee;
+.form-group {
+  padding: 0 !important;
+  margin: 0 !important;
+  height: 38px;
 }
 
+.well {
+  margin: 0 !important;
+}
+
+/*
+  General button
+*/
 .btn {
   background: #fff;
   background-image: -webkit-linear-gradient(top, #fff, #ced3d6);
   background-image: linear-gradient(to bottom, #fff, #ced3d6);
-  border-radius: 28px;
+  -webkit-border-radius: 28;
+  -moz-border-radius: 28;
+  border-color: #0f40a7;
   font-family: Arial;
   color: #000;
   font-size: 12px;
   padding: 0 !important;
   text-decoration: none;
-  width: 85%;
+  float: right;
+  width: 30px;
+  height: 25px;
 }
 
 .btn:hover {
@@ -7718,11 +7736,17 @@ button.close {
 }
 
 .edit-input {
-  width: 80%;
   border: none;
   display: none;
   border-bottom: solid 2px #969696;
   padding: 2px;
+  width: 100%;
+}
+
+.glyphicon-sizing {
+  width: 15px;
+  left: 2.5px;
+  height: 15px;
 }
 
 .cancel-info-edit, .save-info-edit,
@@ -7732,12 +7756,8 @@ button.close {
 }
 
 input[type="file"] {
-  margin: 18px 0 0 0 !important;
+  display: none;
   width: 100%;
-}
-
-input[type="button"], input[type="reset"] {
-  margin-top: 25px;
 }
 
 .text-body {
