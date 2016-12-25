@@ -7,12 +7,7 @@
 			<div class="panel panel-default">
 				<div class="panel-heading">
 					<div class="row">
-						<div class="col-md-8 col-sm-8 col-xs-8">Profile</div>
-						<div class="col-md-4 col-sm-4 col-xs-4">
-							<button type="button" class="btn info-edit">
-								<span class="glyphicon glyphicon-pencil glyphicon-sizing"></span>&nbsp;
-							</button>
-						</div>
+						<div class="col-md-12 col-sm-12 col-xs-12">Profile</div>
 					</div>
 				</div>	
 				<div class="panel-body">
@@ -71,10 +66,17 @@
 						</div>
 						<div class="col-lg-8 col-xs-8">
 							<div class="row">
-								<div class="col-lg-8 col-xs-8"></div>
-								<div class="col-lg-2 col-xs-2 padding-reset"><input class="btn btn-default cancel-info-edit" value="Cancel" type="reset"></div>
-								<div class="col-lg-2 col-xs-2 padding-reset">
-									<input class="btn btn-primary save-info-edit" value="Save" type="button">
+								<div class="col-lg-6 col-xs-6"></div>
+								<div class="col-lg-6 col-xs-6">
+									<button type="button" class="btn profile-btn save-info-edit">
+										<span class="glyphicon glyphicon-ok glyphicon-sizing"></span>&nbsp;
+									</button>
+									<button type="button" class="btn profile-btn info-edit">
+										<span class="glyphicon glyphicon-pencil glyphicon-sizing"></span>&nbsp;
+									</button>
+									<button type="button" class="btn profile-btn cancel-info-edit btn-margin">
+										<span class="glyphicon glyphicon-remove glyphicon-sizing"></span>&nbsp;
+									</button>
 								</div>
 							</div>
 						</div>
@@ -86,17 +88,23 @@
 				<div class="panel-body">
 
 					<div class="row">
-						<div class="col-lg-12 text-body"></div>
-						<div class="col-lg-4">
+						<div class="col-lg-12 col-xs-12 text-body"></div>
+						<div class="col-lg-4 col-xs-4">
 							
 						</div>
-						<div class="col-lg-8">
+						<div class="col-lg-8 col-xs-8">
 							<div class="row">
-								<div class="col-lg-8"></div>
-								<div class="col-lg-2 padding-reset"><input class="btn btn-default cancel-summary-edit" value="Cancel" type="reset"></div>
-								<div class="col-lg-2 padding-reset">
-									<input class="btn btn-primary summary-edit" value="Edit" type="button">
-									<input class="btn btn-primary save-summary-edit" value="Save" type="button">
+								<div class="col-lg-6 col-xs-6"></div>
+								<div class="col-lg-6 col-xs-6">
+									<button type="button" class="btn profile-btn save-summary-edit">
+										<span class="glyphicon glyphicon-ok glyphicon-sizing"></span>&nbsp;
+									</button>
+									<button type="button" class="btn profile-btn summary-edit">
+										<span class="glyphicon glyphicon-pencil glyphicon-sizing"></span>&nbsp;
+									</button>
+									<button type="button" class="btn profile-btn cancel-summary-edit btn-margin">
+										<span class="glyphicon glyphicon-remove glyphicon-sizing"></span>&nbsp;
+									</button>
 								</div>
 							</div>
 						</div>
@@ -106,18 +114,25 @@
 			<div class="panel panel-default">
 				<div class="panel-heading">Profolio</div>
 				<div class="panel-body">
+
 					<div class="row">
-						<div class="col-lg-12 text-body"></div>
-						<div class="col-lg-4">
+						<div class="col-lg-12 col-xs-12 text-body"></div>
+						<div class="col-lg-4 col-xs-4">
 							
 						</div>
-						<div class="col-lg-8">
+						<div class="col-lg-8 col-xs-8">
 							<div class="row">
-								<div class="col-lg-8"></div>
-								<div class="col-lg-2 padding-reset"><input class="btn btn-default cancel-profolio-edit" value="Cancel" type="reset"></div>
-								<div class="col-lg-2 padding-reset">
-									<input class="btn btn-primary profolio-edit" value="Edit" type="button">
-									<input class="btn btn-primary save-profolio-edit" value="Save" type="button">
+								<div class="col-lg-6 col-xs-6"></div>
+								<div class="col-lg-6 col-xs-6">
+									<button type="button" class="btn profile-btn save-profolio-edit">
+										<span class="glyphicon glyphicon-ok glyphicon-sizing"></span>&nbsp;
+									</button>
+									<button type="button" class="btn profile-btn profolio-edit">
+										<span class="glyphicon glyphicon-pencil glyphicon-sizing"></span>&nbsp;
+									</button>
+									<button type="button" class="btn profile-btn cancel-profolio-edit btn-margin">
+										<span class="glyphicon glyphicon-remove glyphicon-sizing"></span>&nbsp;
+									</button>
 								</div>
 							</div>
 						</div>

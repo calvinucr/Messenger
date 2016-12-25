@@ -7710,7 +7710,11 @@ h1, h2, h3, h4, h5, h6 {
 /*
   General button
 */
-.btn {
+.form-group {
+  height: 45px !important;
+}
+
+.profile-btn {
   background: #fff;
   background-image: -webkit-linear-gradient(top, #fff, #ced3d6);
   background-image: linear-gradient(to bottom, #fff, #ced3d6);
@@ -7727,12 +7731,16 @@ h1, h2, h3, h4, h5, h6 {
   height: 25px;
 }
 
-.btn:hover {
+.profile-btn:hover {
   background: #ffffff;
   background-image: -webkit-linear-gradient(top, #ffffff, #b8b8b8);
   background-image: linear-gradient(to bottom, #ffffff, #b8b8b8);
   text-decoration: none;
   color: #000;
+}
+
+.btn-margin {
+  margin-right: 15px !important;
 }
 
 .edit-input {
@@ -7744,9 +7752,10 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .glyphicon-sizing {
-  width: 15px;
-  left: 2.5px;
   height: 15px;
+  width: 15px;
+  top: 2px;
+  left: 2px;
 }
 
 .cancel-info-edit, .save-info-edit,

@@ -1,7 +1,8 @@
 /*
   General button
 */
-.btn {
+.form-group   { height: 45px !important;}
+.profile-btn  {
   background: #fff;
   background-image: -webkit-linear-gradient(top, #fff, #ced3d6);
   background-image: -moz-linear-gradient(top, #fff, #ced3d6);
@@ -21,7 +22,7 @@
   height: 25px;
 }
 
-.btn:hover {
+.profile-btn:hover {
   background: #ffffff;
   background-image: -webkit-linear-gradient(top, #ffffff, #b8b8b8);
   background-image: -moz-linear-gradient(top, #ffffff, #b8b8b8);
@@ -31,6 +32,7 @@
   text-decoration: none;
   color: #000;
 }
+.btn-margin  { margin-right: 15px !important;}
 .edit-input 	{   
   border: none;
   display: none;
@@ -38,10 +40,11 @@
   padding: 2px;
   width:100%;
 }
-.glyphicon-sizing {     
+.glyphicon-sizing {   
+  height: 15px;  
   width: 15px;
-  left: 2.5px;
-  height: 15px;
+  top:2px;
+  left: 2px;
 }
 .cancel-info-edit,.save-info-edit,
 .cancel-summary-edit,.save-summary-edit,
