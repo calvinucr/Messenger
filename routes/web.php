@@ -16,6 +16,7 @@ Route::get('/', function () {
 });
 Route::get('/home', 'HomeController@index');
 Route::get('/profile', 'ProfileController@index');
+Route::post('/profile/update', 'ProfileController@update');
 Route::get('/contacts', 'ContactsController@index');
 
 Auth::routes();
