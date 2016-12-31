@@ -7743,14 +7743,6 @@ h1, h2, h3, h4, h5, h6 {
   margin-right: 15px !important;
 }
 
-.edit-input {
-  border: none;
-  display: none;
-  border-bottom: solid 2px #969696;
-  padding: 2px;
-  width: 100%;
-}
-
 .glyphicon-sizing {
   height: 15px;
   width: 15px;
@@ -7762,6 +7754,21 @@ h1, h2, h3, h4, h5, h6 {
 .cancel-summary-edit, .save-summary-edit,
 .cancel-profolio-edit, .save-profolio-edit {
   display: none;
+}
+
+/*
+  Edit field
+*/
+.edit-input {
+  border: none;
+  display: none;
+  border-bottom: solid 2px #969696;
+  padding: 2px;
+  width: 100%;
+}
+
+.edit-input:focus {
+  border: none !important;
 }
 
 input[type="file"] {

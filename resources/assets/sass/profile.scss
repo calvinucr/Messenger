@@ -33,13 +33,6 @@
   color: #000;
 }
 .btn-margin  { margin-right: 15px !important;}
-.edit-input 	{   
-  border: none;
-  display: none;
-  border-bottom: solid 2px #969696;
-  padding: 2px;
-  width:100%;
-}
 .glyphicon-sizing {   
   height: 15px;  
   width: 15px;
@@ -51,6 +44,16 @@
 .cancel-profolio-edit,.save-profolio-edit
 {	display:none;}
 
-
+/*
+  Edit field
+*/
+.edit-input   {   
+  border: none;
+  display: none;
+  border-bottom: solid 2px #969696;
+  padding: 2px;
+  width:100%;
+}
+.edit-input:focus  { border:none !important;}
 input[type="file"] 	{	display:none; width: 100%;}
 .text-body	{	height:200px;}
