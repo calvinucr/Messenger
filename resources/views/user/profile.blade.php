@@ -21,8 +21,7 @@
 
 						<!-- edit form column -->
 						<div class="col-md-8 col-sm-6 col-xs-6 personal-info">
-							
-							<form class="form-horizontal" role="form" method="POST" action="{{ url('/profile/update') }}">
+							<form class="form-horizontal" role="form" method="POST" action="{{ url('/profile/updateInfo') }}">
 								{{ csrf_field() }}
 								<div class="form-group{{ $errors->has('name') ? ' has-error' : '' }}">
 									<label for="name" class="col-md-4 control-label">Name</label>
@@ -48,7 +47,7 @@
 										<label for="email" class="control-label info">
 											<p class="text-info">{{ $user->email }}</p>
 										</label>
-										<input id="email" type="email" class="form-control edit-input" name="email" value="{{ $user->email }}" required>
+										<input id="email" type="email" class="form-control edit-input" name="email" value="{{ $user->email }}">
 
 										@if ($errors->has('email'))
 											<span class="help-block">
@@ -64,7 +63,7 @@
 										<label for="company" class="control-label info">
 											<p class="text-info">{{ $user->company }}</p>
 										</label>
-										<input id="company" type="company" class="form-control edit-input" name="company" value="{{ $user->company }}" required>
+										<input id="company" type="company" class="form-control edit-input" name="company" value="{{ $user->company }}">
 
 										@if ($errors->has('company'))
 											<span class="help-block">
@@ -80,7 +79,7 @@
 										<label for="city" class="control-label info">
 											<p class="text-info">{{ $user->city }}</p>
 										</label>
-										<input id="city" type="city" class="form-control edit-input" name="city" value="{{ $user->city }}" required>
+										<input id="city" type="city" class="form-control edit-input" name="city" value="{{ $user->city }}">
 
 										@if ($errors->has('city'))
 											<span class="help-block">
@@ -96,7 +95,10 @@
 										<label for="phone" class="control-label info">
 											<p class="text-info">{{ $user->phone }}</p>
 										</label>
-										<input id="phone" type="phone" class="form-control edit-input" name="phone" value="{{ $user->phone }}" required>
+										<input id="phone-1" type="phone-1" class="form-control edit-input phone-input-1" name="phone-1" maxlength="1" value="{{ $phone1 }}">
+										<input id="phone-2" type="phone-2" class="form-control edit-input phone-input-2" name="phone-2" maxlength="3" value="{{ $phone2 }}">
+										<input id="phone-3" type="phone-3" class="form-control edit-input phone-input-2" name="phone-3" maxlength="3" value="{{ $phone3 }}">
+										<input id="phone-4" type="phone-4" class="form-control edit-input phone-input-3" name="phone-4" maxlength="4" value="{{ $phone4 }}">
 
 										@if ($errors->has('phone'))
 											<span class="help-block">
@@ -131,7 +133,7 @@
 				</div>
 			</div>
 			<div class="panel panel-default">
-				<div class="panel-heading">Summary</div>
+				<div class="panel-heading">Description</div>
 				<div class="panel-body">
 
 					<div class="row">
@@ -143,13 +145,13 @@
 							<div class="row">
 								<div class="col-lg-6 col-xs-6"></div>
 								<div class="col-lg-6 col-xs-6">
-									<button type="button" class="btn profile-btn save-summary-edit">
+									<button type="button" class="btn profile-btn save-description-edit">
 										<span class="glyphicon glyphicon-ok glyphicon-sizing"></span>&nbsp;
 									</button>
-									<button type="button" class="btn profile-btn summary-edit">
+									<button type="button" class="btn profile-btn description-edit">
 										<span class="glyphicon glyphicon-pencil glyphicon-sizing"></span>&nbsp;
 									</button>
-									<button type="button" class="btn profile-btn cancel-summary-edit btn-margin">
+									<button type="button" class="btn profile-btn cancel-description-edit btn-margin">
 										<span class="glyphicon glyphicon-remove glyphicon-sizing"></span>&nbsp;
 									</button>
 								</div>

@@ -14,10 +14,12 @@
 Route::get('/', function () {
     return view('welcome');
 });
-Route::get('/home', 'HomeController@index');
-Route::get('/profile', 'ProfileController@index');
-Route::post('/profile/update', 'ProfileController@update');
-Route::get('/contacts', 'ContactsController@index');
+Route::get('/home', 						'HomeController@index');
+Route::get('/profile', 						'ProfileController@index');
+Route::post('/profile/updateInfo', 			'ProfileController@updateInfo');
+Route::post('/profile/updateDescription', 	'ProfileController@updateSummary');
+Route::post('/profile/updateProfolio', 		'ProfileController@updateProfolio');
+Route::get('/contacts', 					'ContactsController@index');
 
 Auth::routes();
 

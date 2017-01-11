@@ -17,21 +17,21 @@ $(document).ready(function() {
 		$('.save-info-edit').hide();
 	});
 	
-	/* Edit summary button */
-	$('.summary-edit').click(function () {
-		$('.summary').hide();
-		$('.summary-input').show();
-		$('.cancel-summary-edit').show();
-		$('.summary-edit').hide();
-		$('.save-summary-edit').show();
+	/* Edit description button */
+	$('.description-edit').click(function () {
+		$('.description').hide();
+		$('.description-input').show();
+		$('.cancel-description-edit').show();
+		$('.description-edit').hide();
+		$('.save-description-edit').show();
 	});
 
-	$('.cancel-summary-edit').click(function () {
-		$('.summary').show();
+	$('.cancel-description-edit').click(function () {
+		$('.description').show();
 		$('.edit-input').hide();
-		$('.cancel-summary-edit').hide();
-		$('.summary-edit').show();
-		$('.save-summary-edit').hide();
+		$('.cancel-description-edit').hide();
+		$('.description-edit').show();
+		$('.save-description-edit').hide();
 	});
 
 	/* Edit profolio button */

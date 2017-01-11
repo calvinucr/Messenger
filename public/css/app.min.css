@@ -7708,7 +7708,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /*
-  General button
+	General button
 */
 .form-group {
   height: 45px !important;
@@ -7751,13 +7751,13 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .cancel-info-edit, .save-info-edit,
-.cancel-summary-edit, .save-summary-edit,
+.cancel-description-edit, .save-description-edit,
 .cancel-profolio-edit, .save-profolio-edit {
   display: none;
 }
 
 /*
-  Edit field
+	Input field
 */
 .edit-input {
   border: none;
@@ -7771,9 +7771,16 @@ h1, h2, h3, h4, h5, h6 {
   border: none !important;
 }
 
-input[type="file"] {
-  display: none;
-  width: 100%;
+.phone-input-1 {
+  width: 15px;
+}
+
+.phone-input-2 {
+  width: 30px;
+}
+
+.phone-input-3 {
+  width: 40px;
 }
 
 .text-body {

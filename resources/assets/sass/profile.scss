@@ -1,58 +1,61 @@
 /*
-  General button
+	General button
 */
 .form-group   { height: 45px !important;}
 .profile-btn  {
-  background: #fff;
-  background-image: -webkit-linear-gradient(top, #fff, #ced3d6);
-  background-image: -moz-linear-gradient(top, #fff, #ced3d6);
-  background-image: -ms-linear-gradient(top, #fff, #ced3d6);
-  background-image: -o-linear-gradient(top, #fff, #ced3d6);
-  background-image: linear-gradient(to bottom, #fff, #ced3d6);
-  -webkit-border-radius: 28;
-  -moz-border-radius: 28;
-  border-color: #0f40a7;
-  font-family: Arial;
-  color: #000;
-  font-size: 12px;
-  padding: 0 !important;
-  text-decoration: none;
-  float: right;
-  width: 30px;
-  height: 25px;
+	background: #fff;
+	background-image: -webkit-linear-gradient(top, #fff, #ced3d6);
+	background-image: -moz-linear-gradient(top, #fff, #ced3d6);
+	background-image: -ms-linear-gradient(top, #fff, #ced3d6);
+	background-image: -o-linear-gradient(top, #fff, #ced3d6);
+	background-image: linear-gradient(to bottom, #fff, #ced3d6);
+	-webkit-border-radius: 28;
+	-moz-border-radius: 28;
+	border-color: #0f40a7;
+	font-family: Arial;
+	color: #000;
+	font-size: 12px;
+	padding: 0 !important;
+	text-decoration: none;
+	float: right;
+	width: 30px;
+	height: 25px;
 }
 
 .profile-btn:hover {
-  background: #ffffff;
-  background-image: -webkit-linear-gradient(top, #ffffff, #b8b8b8);
-  background-image: -moz-linear-gradient(top, #ffffff, #b8b8b8);
-  background-image: -ms-linear-gradient(top, #ffffff, #b8b8b8);
-  background-image: -o-linear-gradient(top, #ffffff, #b8b8b8);
-  background-image: linear-gradient(to bottom, #ffffff, #b8b8b8);
-  text-decoration: none;
-  color: #000;
+	background: #ffffff;
+	background-image: -webkit-linear-gradient(top, #ffffff, #b8b8b8);
+	background-image: -moz-linear-gradient(top, #ffffff, #b8b8b8);
+	background-image: -ms-linear-gradient(top, #ffffff, #b8b8b8);
+	background-image: -o-linear-gradient(top, #ffffff, #b8b8b8);
+	background-image: linear-gradient(to bottom, #ffffff, #b8b8b8);
+	text-decoration: none;
+	color: #000;
 }
 .btn-margin  { margin-right: 15px !important;}
 .glyphicon-sizing {   
-  height: 15px;  
-  width: 15px;
-  top:2px;
-  left: 2px;
+	height: 15px;  
+	width: 15px;
+	top:2px;
+	left: 2px;
 }
 .cancel-info-edit,.save-info-edit,
-.cancel-summary-edit,.save-summary-edit,
+.cancel-description-edit,.save-description-edit,
 .cancel-profolio-edit,.save-profolio-edit
 {	display:none;}
 
 /*
-  Edit field
+	Input field
 */
 .edit-input   {   
-  border: none;
-  display: none;
-  border-bottom: solid 2px #969696;
-  padding: 2px;
-  width:100%;
+	border: none;
+	display: none;
+	border-bottom: solid 2px #969696;
+	padding: 2px;
+	width:100%;
 }
-.edit-input:focus  { border:none !important;}
-.text-body	{	height:200px;}
+.edit-input:focus   {  	border:none !important;}
+.phone-input-1      {  	width: 15px;}
+.phone-input-2     	{  	width: 30px;}
+.phone-input-3      {  	width: 40px;}
+.text-body	        {	height:200px;} 
