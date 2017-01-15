@@ -4,7 +4,7 @@ namespace App\Http\Requests;
 
 use Illuminate\Foundation\Http\FormRequest;
 
-class updateProfileProfolio extends FormRequest
+class updateProfileDescription extends FormRequest
 {
     /**
      * Determine if the user is authorized to make this request.
@@ -13,7 +13,7 @@ class updateProfileProfolio extends FormRequest
      */
     public function authorize()
     {
-        return false;
+        return true;
     }
 
     /**
@@ -24,7 +24,7 @@ class updateProfileProfolio extends FormRequest
     public function rules()
     {
         return [
-            'profolio'  => 'required|max:244',
+            'description'  => 'required|max:244',
         ];
     }
 
@@ -36,8 +36,9 @@ class updateProfileProfolio extends FormRequest
     public function messages()
     {
         return [
-            'profolio.max'     =>  'Maximum of 244 characters',
+            'description.max'     =>  'Maximum of 244 characters',
 
         ];
     }
 }
+

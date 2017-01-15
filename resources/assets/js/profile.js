@@ -3,7 +3,7 @@ $(document).ready(function() {
 	/* Edit info button */
 	$('.info-edit').click(function () {
 		$('.info').hide();
-		$('.edit-input').show();
+		$('.info-input').show();
 		$('.cancel-info-edit').show();
 		$('.info-edit').hide();
 		$('.save-info-edit').show();
@@ -11,7 +11,7 @@ $(document).ready(function() {
 
 	$('.cancel-info-edit').click(function () {
 		$('.info').show();
-		$('.edit-input').hide();
+		$('.info-input').hide();
 		$('.cancel-info-edit').hide();
 		$('.info-edit').show();
 		$('.save-info-edit').hide();
@@ -28,7 +28,7 @@ $(document).ready(function() {
 
 	$('.cancel-description-edit').click(function () {
 		$('.description').show();
-		$('.edit-input').hide();
+		$('.description-input').hide();
 		$('.cancel-description-edit').hide();
 		$('.description-edit').show();
 		$('.save-description-edit').hide();
@@ -37,7 +37,7 @@ $(document).ready(function() {
 	/* Edit profolio button */
 	$('.profolio-edit').click(function () {
 		$('.profolio').hide();
-		$('.edit-input').show();
+		$('.profolio-input').show();
 		$('.cancel-profolio-edit').show();
 		$('.profolio-edit').hide();
 		$('.save-profolio-edit').show();
@@ -45,7 +45,7 @@ $(document).ready(function() {
 
 	$('.cancel-profolio-edit').click(function () {
 		$('.profolio').show();
-		$('.edit-input').hide();
+		$('.profolio-input').hide();
 		$('.cancel-profolio-edit').hide();
 		$('.profolio-edit').show();
 		$('.save-profolio-edit').hide();

@@ -17,7 +17,7 @@ Route::get('/', function () {
 Route::get('/home', 						'HomeController@index');
 Route::get('/profile', 						'ProfileController@index');
 Route::post('/profile/updateInfo', 			'ProfileController@updateInfo');
-Route::post('/profile/updateDescription', 	'ProfileController@updateSummary');
+Route::post('/profile/updateDescription', 	'ProfileController@updateDescription');
 Route::post('/profile/updateProfolio', 		'ProfileController@updateProfolio');
 Route::get('/contacts', 					'ContactsController@index');
 

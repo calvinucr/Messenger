@@ -70,7 +70,7 @@ class ProfileController extends Controller
 		$user->save();
 
 		//	Save user phone
-		$user->phone = $request->input('phone-1');
+		$user->phone = $request->input('phone');
 		$user->save();
 
 		return Redirect()->back();
@@ -87,8 +87,8 @@ class ProfileController extends Controller
 
 		$user = Auth::user();
 
-		//	Save user name
-		$user->description = $request->input('description', $user->name);
+		//	Save user description
+		$user->description = $request->input('description');
 		$user->save();
 
 		return Redirect()->back();
@@ -104,7 +104,8 @@ class ProfileController extends Controller
 	{
 		$user = Auth::user();
 
-		
+		//	Save user profolio
+		$user->dprofolio = $request->input('profolio');
 		$user->save();
 
 		return Redirect()->back();

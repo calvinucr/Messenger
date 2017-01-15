@@ -45,17 +45,15 @@
 {	display:none;}
 
 /*
-	Input field
+	Input fields
 */
-.edit-input   {   
+.info-input {   
 	border: none;
+	border-bottom: 1px;
 	display: none;
-	border-bottom: solid 2px #969696;
-	padding: 2px;
 	width:100%;
 }
-.edit-input:focus   {  	border:none !important;}
-.phone-input-1      {  	width: 15px;}
-.phone-input-2     	{  	width: 30px;}
-.phone-input-3      {  	width: 40px;}
-.text-body	        {	height:200px;} 
+.description-input, .profolio-input  	{   height: 95%; display:none; background-color: #eae9e7;}
+.text-body					{ 	height: 200px;}
+.info-input:focus  						{  	border:none !important;}
+.text-body	        					{	height:200px;}
